@@ -1,0 +1,65 @@
+.viewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(40, 35, 29, 0.94);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.viewer-close {
+  position: absolute;
+  top: calc(12px + env(safe-area-inset-top));
+  left: 12px;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: #fcefe3;
+  padding: 8px;
+}
+
+.viewer-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px 8px;
+  min-height: 0;
+}
+
+/* Plain contain-fit. No polaroid / frame decoration (spec §5.3). */
+.viewer-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.viewer-footer {
+  padding: 16px 16px calc(28px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.viewer-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.viewer-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--r-pill);
+  background: rgba(252, 239, 227, 0.35);
+}
+
+.viewer-dot.is-active {
+  background: var(--clay);
+}
+
+.viewer-caption {
+  color: rgba(252, 239, 227, 0.85);
+  font-size: 14px;
+}

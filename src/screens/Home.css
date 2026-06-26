@@ -1,0 +1,140 @@
+.home-date-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clay);
+  line-height: 1.2;
+}
+
+.home-date-weekday {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 1px;
+}
+
+.home-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.home-page {
+  padding: 8px var(--margin) 0;
+}
+
+/* year card */
+.yearcard {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--surface);
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+button.yearcard {
+  cursor: pointer;
+}
+
+.yearcard-thumb {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 88px;
+}
+
+.yearcard-thumb-btn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: block;
+}
+
+.yearcard-img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: var(--r-lg);
+  display: block;
+  border: 1px solid var(--ink-10);
+}
+
+.yearcard-thumb--empty {
+  width: 88px;
+  height: 88px;
+  border: 1.5px dashed var(--ink-30);
+  border-radius: var(--r-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-30);
+}
+
+.yearcard-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.yearcard-year {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--clay);
+  letter-spacing: -0.02em;
+}
+
+.yearcard-year--muted {
+  color: var(--ink-30);
+}
+
+.yearcard-preview {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-60);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.yearcard-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--clay);
+}
+
+.yearcard--empty {
+  border-bottom: 1px solid var(--surface);
+}
+
+/* FAB */
+.fab {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-pill);
+  background: var(--clay);
+  color: var(--on-primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--fab-shadow);
+  z-index: 21;
+}

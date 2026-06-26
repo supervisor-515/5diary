@@ -1,0 +1,131 @@
+.set-apptitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--clay);
+}
+
+.set-page {
+  padding: 8px var(--margin) 0;
+}
+
+.set-head {
+  padding: 12px 4px 24px;
+}
+
+.set-h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.set-sub {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--ink-60);
+}
+
+.set-group {
+  margin-bottom: 28px;
+}
+
+.set-grouptitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-60);
+  padding: 0 4px 10px;
+}
+
+.set-card {
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--ink-10);
+}
+
+.set-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 18px;
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+button.set-row {
+  cursor: pointer;
+}
+
+.set-row--stack {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+}
+
+.set-rowtop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.set-rowicon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-pill);
+  background: var(--clay-15);
+  color: var(--clay);
+  flex: 0 0 auto;
+}
+
+.set-rowlabel {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.set-rowvalue {
+  font-size: 15px;
+  color: var(--ink-60);
+  margin-right: 4px;
+}
+
+.set-chev {
+  color: var(--ink-30);
+}
+
+.set-divider {
+  height: 1px;
+  background: var(--ink-10);
+  margin: 0 18px;
+}
+
+/* segmented control */
+.segment {
+  display: flex;
+  background: var(--paper);
+  border-radius: var(--r-pill);
+  padding: 4px;
+  border: 1px solid var(--ink-10);
+}
+
+.segment-item {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 9px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-60);
+  border-radius: var(--r-pill);
+}
+
+.segment-item.is-active {
+  background: var(--clay);
+  color: var(--on-primary);
+}
