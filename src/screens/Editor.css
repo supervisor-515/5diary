@@ -1,0 +1,125 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.editor-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--clay);
+}
+
+.editor-page {
+  padding: 16px var(--margin) 40px;
+}
+
+.datechip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.date-editor {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.date-editor label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: var(--ink-60);
+  gap: 4px;
+}
+
+.date-editor select {
+  background: var(--paper);
+  border: 1px solid var(--surface);
+  border-radius: var(--r-sm);
+  padding: 8px 10px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.photo-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 20px 0 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.photo-tile {
+  position: relative;
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--ink-10);
+}
+
+.photo-tile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--r-pill);
+  border: none;
+  background: rgba(58, 51, 43, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-add {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  border: 1.5px dashed var(--ink-30);
+  border-radius: var(--r-lg);
+  background: transparent;
+  color: var(--ink-60);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.editor-body {
+  width: 100%;
+  margin-top: 16px;
+  min-height: 260px;
+  resize: vertical;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.editor-body::placeholder {
+  color: var(--ink-30);
+}

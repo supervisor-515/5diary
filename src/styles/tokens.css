@@ -1,0 +1,42 @@
+/* Warm Paper Diary — design tokens (single source of truth) */
+:root {
+  /* core 5 colors (locked per build spec §3) */
+  --paper: #f4eee2; /* background / warm paper */
+  --surface: #e8dfca; /* card / surface */
+  --ink: #3a332b; /* body text */
+  --clay: #c8785a; /* primary (clay / terracotta) */
+  --olive: #7c7f52; /* secondary (olive) */
+
+  /* derived tones */
+  --ink-60: rgba(58, 51, 43, 0.6);
+  --ink-45: rgba(58, 51, 43, 0.45);
+  --ink-30: rgba(58, 51, 43, 0.3);
+  --ink-10: rgba(58, 51, 43, 0.1);
+  --olive-15: rgba(124, 127, 82, 0.15);
+  --clay-15: rgba(200, 120, 90, 0.15);
+  --on-primary: #f4eee2;
+  --error: #ba1a1a;
+
+  /* typography */
+  --font-serif: 'Libre Caslon Text', 'Pretendard Variable', serif;
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, system-ui, sans-serif;
+
+  /* radius */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-pill: 9999px;
+
+  /* spacing rhythm (8px base) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 40px;
+
+  --margin: 20px;
+  --max-w: 720px;
+
+  /* soft diffused fab shadow only */
+  --fab-shadow: 0 10px 30px -10px rgba(58, 51, 43, 0.25);
+}
